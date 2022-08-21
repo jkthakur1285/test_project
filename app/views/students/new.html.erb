@@ -1,0 +1,16 @@
+<h1>New Student</h1>
+
+<%=form_for @student do |form| %>
+
+  <p><%=form.label :name %>
+  <%=form.text_field :name %></p>
+
+  <p><%=form.label :roll_no %>
+    <%=form.text_field :roll_no %></p>
+
+  <p><%=form.submit %></p>
+
+<%end %>
+
+<%=link_to :back, root_path %>
+
